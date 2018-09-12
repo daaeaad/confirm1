@@ -1,0 +1,64 @@
+ @charset "utf-8";
+ 
+ /*초기화셋팅*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+/*            position: relative;*/
+/*            font-family: 'Montserrat-Black', sans-serif;*/
+            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Nanum Myeongjo', serif;
+            font-family: 'Montserrat', sans-serif;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        img {
+            border: 0;
+        }
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #wrapinnerup {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }        
+        .wrap_inner {
+            width: 1200px;
+            height:auto;
+            margin:300px auto;
+            border:1px solid red;
+        }
+        .wrap_inner span.main_tit{
+            width:855px;
+            height:143px;
+            display: block;
+            background-image:url('./images/main1_1_maintitle.png');
+            float:left;
+            margin: 0 auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .pg {
+            width: 100%;
+            height: 100%;
+            clear: both;
+/*            position:relative;*/
+        }
+        #con {
+            width: 100%;
+            height: 100%;
+/*            position: relative;*/
+        }

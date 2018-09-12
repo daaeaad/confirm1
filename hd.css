@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/*헤더*/
+        .hd {
+            width:100%;
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .hdWrap {
+            width: 1200px;
+            margin: 10px auto;
+            clear: both;
+            position: relative;
+        }
+        .hdWrap a {
+            color: white;
+        }
+        
+        .hdWrap li {
+            float: left;
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        .logo {
+            float: left;
+            clear: both;
+        }
+
+        /*임시 디스플레이논*/
+        #con2 {
+            display: none;
+        }
+        
+        /*네비게이션바 영역*/
+        .gnb {
+            float:left;
+            margin-left:224px;
+        }
+        .gnb li.menu {
+            float: left;
+            padding-left: 10px;
+            padding-top: 30px;
+        }
+        .gnb li.menu > a {
+            font-weight: bold;
+            padding-left: 30px;
+        }
+        .gnb li.menu > a:hover {
+            color: #ff9100;
+        }
+/*        
+        .gnb li.menu:hover > a:after {
+            border-bottom: 5px solid transparent;
+        }
+*/
+
+        .gnb .menu:hover .sub {
+            display: block;
+        }
+        .sub {
+            display: none;
+            width: 1200px;
+            position: absolute;
+            left: 0;
+            top: 70px;
+            z-index: 15;
+            float: left;
+            margin: 0px auto;
+            padding-top: 12px;
+            border-bottom: 3px solid #333;
+            background-color: white
+        }
+        .menuTit:after {
+            content: "ㅡ";
+            display: block;
+            width: 80px;
+            height: 5px;
+            border-color: #ff9100;
+            margin-bottom: 60px;
+        }
+        .sub .left {
+            line-height: 3;
+            width: 27.4%;
+        }
+        .sub .left_inner {
+            margin-left:32px;
+        }
+        .sub .menuCon {
+            line-height: 1.8;
+        }
+        .menu .right {
+            width: 72.6%;
+        }
+        .menu .right li {
+            width: 16.6%;
+            
+        }
+        .sub .right a {
+            font-size:12.8px;
+            line-height: 2;
+        }
+        .sub .right a:hover {
+            color: #ff9100;
+        }
+        .hdWrap .subTit a {
+            color: #333;
+        }
+        
+        /*컬랩시블메뉴 영역*/
+        #collapse {
+            display: none;
+            width: 1200px;
+            height: 1200px;
+        }
+        #ck {
+            display: none;
+        }
+        .lstBtn {
+            display: block;
+            width: 50px;
+            height: 50px;
+            float: right;
+            padding-top: 10px;
+            margin-top: 15px;
+            cursor:pointer;
+        }
+        .lstBtn .line {
+            display: block;
+            width: 28px;
+            margin-left: 11px;
+            height: 3px;
+            margin-top: 6px;
+            background: #fff;
+            transition: 0.5s;
+        }
+        .lstBtn .line:nth-child(2) {
+            width: 18px;
+        }
+        .lstBtn:hover .line:nth-child(2) {
+            width: 28px;
+        }
+        #ck:checked ~ #collapse {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            z-index: 20;
+            height: auto;
+            background-color: #323e07;
+        }
+        #collapse .item {
+            width: 16.66%;
+            height: 100%;
+            float: left;
+            margin: 66px auto;
+        } 
+        #collapse .item li {
+            width: 100%;
+            margin: 0 auto;
+            float: left;
+        }
+        #collapse .item h2 {
+            text-align: center;
+        }
+        #collapse .item a {
+            display: block;
+            text-align: center;
+            color: #333;
+        }
+        #collapse .item a:hover {
+            color: #ff9100;
+        }
+                #ck:checked ~ #collapse {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            z-index: 20;
+            height: auto;
+            background-color: white;
+        }
+        #close {
+            display: block;
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            background-image:url("./images/icon_close_green.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #close:hover {
+            transform: rotate(180deg);
+        }
+     

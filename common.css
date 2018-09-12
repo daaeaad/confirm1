@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/*공통서식*/
+        .left {
+            float:left;
+        }
+        .right {
+            float: right;
+        }
+        
